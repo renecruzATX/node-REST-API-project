@@ -80,6 +80,7 @@ exports.getPost = (req, res, next) => {
       }
       next(err);
     });
+<<<<<<< HEAD
 };
 
 exports.updatePost = (req, res, next) => {
@@ -130,4 +131,6 @@ exports.updatePost = (req, res, next) => {
 const clearImage = filePath => {
   filePath = path.join(__dirname, '..', filePath);
   fs.unlink(filePath, err => console.log(err));
+=======
+>>>>>>> 8c380aed2bfbf5475ad78e924775929eb9799fe7
 };
