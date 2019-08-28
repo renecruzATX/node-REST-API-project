@@ -41,7 +41,7 @@ exports.signup = (req, res, next) => {
 exports.login = (req, res, next) => {
     const email = req.body.email;
     const password = req.body.password;
-    let loadedUser;
+    let loadedUser;    
     User
         .findOne({email: email})
         .then((user) => {
@@ -51,6 +51,7 @@ exports.login = (req, res, next) => {
                 throw error;
             }
             loadedUser = user;
+            console.log(loadedUser);
             return bcrypt.compare(password, user.password);
         })
         .then(isEqual => {
@@ -72,6 +73,7 @@ exports.login = (req, res, next) => {
                 .json({
                     token: token,
                     userId: loadedUser._id.toString()
+                    
                 });
         })
         .catch((err) => {

@@ -1,6 +1,5 @@
 const express = require('express');
 const { body } = require('express-validator');
-var cors = require('cors')
 
 const User = require('../models/user');
 const authController = require('../controllers/auth');
@@ -10,7 +9,6 @@ const router = express.Router();
 
 router.put(
     '/signup',
-    cors(),
     [
       body('email')
         .isEmail()
