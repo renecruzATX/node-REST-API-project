@@ -301,7 +301,7 @@ class Feed extends Component {
             <Paginator
               onPrevious={this.loadPosts.bind(this, 'previous')}
               onNext={this.loadPosts.bind(this, 'next')}
-              lastPage={Math.ceil(this.state.totalPosts / 5)}
+              lastPage={Math.ceil(this.state.totalPosts / 3)}
               currentPage={this.state.postPage}
             >
               {this.state.posts.map(post => (
