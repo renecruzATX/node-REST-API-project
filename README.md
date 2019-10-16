@@ -34,9 +34,7 @@ This project assumes that you have a working knowledge of HTML, CSS, Javascript,
 
 ## Project Links
 
-Deployed site: [Burger Builder](http://burger-builder-final.herokuapp.com/)
-
-Github repo: https://github.com/renecruzATX/burger-builder-final
+Github repo: https://github.com/renecruzATX/node-REST-API-project
 
 NodeJS docs: https://nodejs.org/en/docs/
 
